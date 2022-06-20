@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item
+        android:title="Mapa"
+        android:id="@+id/view_map"
+        app:showAsAction="never"/>
+    <item
+        android:title="Búsqueda A-Z"
+        android:id="@+id/view_advanced_search"
+        app:showAsAction="never"/>
+    <item
+        android:title="Acerca de nosotros"
+        android:id="@+id/view_about_us"
+        app:showAsAction="never"/>
+    <item
+        android:title="Donar"
+        android:id="@+id/view_donate"
+        app:showAsAction="never"/>
+    <item
+        android:title="Administrador"
+        android:id="@+id/view_login"
+        app:showAsAction="never"/>
+
+</menu>

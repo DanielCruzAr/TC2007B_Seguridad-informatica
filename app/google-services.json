@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "37538914698",
+    "project_id": "esencia-patrimonio",
+    "storage_bucket": "esencia-patrimonio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37538914698:android:dc888dd2994cfce130a873",
+        "android_client_info": {
+          "package_name": "com.itesm.esenciapatrimonio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37538914698-b8h82as4hpfl45d4hccjk0ranmid6lps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcSTaoCOJyrHbfOHUhR9p78UfofTcz18c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37538914698-b8h82as4hpfl45d4hccjk0ranmid6lps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

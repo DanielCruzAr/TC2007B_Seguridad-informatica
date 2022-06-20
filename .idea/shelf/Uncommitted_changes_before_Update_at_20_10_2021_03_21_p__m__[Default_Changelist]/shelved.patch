@@ -1,0 +1,39 @@
+Index: app/src/main/res/menu/lateral_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<menu xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\">\r\n\r\n    <group\r\n        android:id=\"@+id/group1\"\r\n        android:checkableBehavior=\"single\">\r\n\r\n        <item\r\n            android:title=\"Mapa\"\r\n            android:id=\"@+id/view_map\"\r\n            android:checked=\"true\"\r\n            app:showAsAction=\"ifRoom\"/>\r\n        <item\r\n            android:title=\"Búsqueda A-Z\"\r\n            android:id=\"@+id/view_advanced_search\"\r\n            android:checked=\"true\"\r\n            app:showAsAction=\"ifRoom\"/>\r\n        <item\r\n            android:title=\"Acerca de nosotros\"\r\n            android:id=\"@+id/view_about_us\"\r\n            android:checked=\"true\"\r\n            app:showAsAction=\"ifRoom\"/>\r\n        <item\r\n            android:title=\"Donar\"\r\n            android:id=\"@+id/view_donate\"\r\n            android:checked=\"true\"\r\n            app:showAsAction=\"ifRoom\"/>\r\n        <item\r\n            android:title=\"Login\"\r\n            android:id=\"@+id/view_login\"\r\n            android:checked=\"true\"\r\n            app:showAsAction=\"ifRoom\"/>\r\n\r\n    </group>\r\n\r\n</menu>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/menu/lateral_menu.xml b/app/src/main/res/menu/lateral_menu.xml
+--- a/app/src/main/res/menu/lateral_menu.xml	(revision 43413c7c56e88c9f5c51093ba2901c10343f286e)
++++ b/app/src/main/res/menu/lateral_menu.xml	(date 1634759477169)
+@@ -10,7 +10,8 @@
+             android:title="Mapa"
+             android:id="@+id/view_map"
+             android:checked="true"
+-            app:showAsAction="ifRoom"/>
++            app:showAsAction="ifRoom"
++            tools:layout="@layout/fragment_map"/>
+         <item
+             android:title="Búsqueda A-Z"
+             android:id="@+id/view_advanced_search"
+Index: app/src/main/res/navigation/mobile_navigation.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<navigation xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/mobile_navigation\"\r\n\r\n    app:startDestination=\"@id/view_map\">\r\n\r\n    <fragment\r\n        android:id=\"@+id/view_map\"\r\n        android:name=\"com.itesm.esenciapatrimonio.ui.MapFragment\"\r\n        android:label=\"Mapa\"\r\n        tools:layout=\"@layout/fragment_map\"/>\r\n    <fragment\r\n        android:id=\"@+id/view_advanced_search\"\r\n        android:name=\"com.itesm.esenciapatrimonio.ui.AZResultsFragment\"\r\n        android:label=\"Búsqueda A-Z\"\r\n        tools:layout=\"@layout/fragment_az_results\"/>\r\n    <fragment\r\n        android:id=\"@+id/view_about_us\"\r\n        android:name=\"com.itesm.esenciapatrimonio.ui.AboutUsFragment\"\r\n        android:label=\"Sobre Nosotros\"\r\n        tools:layout=\"@layout/fragment_about_us\" />\r\n    <fragment\r\n        android:id=\"@+id/view_login\"\r\n        android:name=\"com.itesm.esenciapatrimonio.ui.LoginFragment\"\r\n        android:label=\"Login\"\r\n        tools:layout=\"@layout/fragment_login_main\" />\r\n    <fragment\r\n        android:id=\"@+id/view_donate\"\r\n        android:name=\"com.itesm.esenciapatrimonio.ui.DonateFragment\"\r\n        android:label=\"Donar\"\r\n        tools:layout=\"@layout/fragment_donacion\" />\r\n\r\n</navigation>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/navigation/mobile_navigation.xml b/app/src/main/res/navigation/mobile_navigation.xml
+--- a/app/src/main/res/navigation/mobile_navigation.xml	(revision 43413c7c56e88c9f5c51093ba2901c10343f286e)
++++ b/app/src/main/res/navigation/mobile_navigation.xml	(date 1634760784307)
+@@ -3,7 +3,7 @@
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:id="@+id/mobile_navigation"
+-
++    app:menu="@menu/lateral_menu"
+     app:startDestination="@id/view_map">
+ 
+     <fragment

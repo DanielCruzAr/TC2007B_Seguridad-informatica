@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+
+    app:startDestination="@id/view_map">
+
+    <fragment
+        android:id="@+id/view_map"
+        android:name="com.itesm.esenciapatrimonio.ui.MapFragment"
+        android:label="Mapa"
+        tools:layout="@layout/fragment_map"
+        />
+    <fragment
+        android:id="@+id/view_advanced_search"
+        android:name="com.itesm.esenciapatrimonio.ui.AZResultsFragment"
+        android:label="Búsqueda A-Z"
+        tools:layout="@layout/fragment_az_results"/>
+    <fragment
+        android:id="@+id/view_about_us"
+        android:name="com.itesm.esenciapatrimonio.ui.AboutUsFragment"
+        android:label="Sobre Nosotros"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/view_login"
+        android:name="com.itesm.esenciapatrimonio.ui.LoginFragment"
+        android:label="Administrador"
+        tools:layout="@layout/fragment_login_main" />
+    <fragment
+        android:id="@+id/view_donate"
+        android:name="com.itesm.esenciapatrimonio.ui.DonateFragment"
+        android:label="Donar"
+        tools:layout="@layout/fragment_donacion" />
+
+
+</navigation>
